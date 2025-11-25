@@ -19,11 +19,19 @@ To write a Python program that reverses the values in a stack using standard sta
    - Append it to `reverse`.
 6. Print the reversed list.
 
-
 ### Program:
-Add Code Here
-
+```
+from queue import LifoQueue
+stack = LifoQueue(maxsize=5)
+n= int(input())
+for i in range(n):
+    stack.put(input())
+print(stack.full())
+for i in range(n):
+    print(stack.get())
+```
 ## 🧪 Sample Input and Output
+<img width="401" height="388" alt="image" src="https://github.com/user-attachments/assets/00950e0b-464a-44f8-9279-e3d7f0edba7e" />
 
 ## Result
-
+The Program was executed successfully
